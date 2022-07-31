@@ -5,7 +5,7 @@ export const CustomFrame = styled.TouchableOpacity`
     padding: 20px
     margin-top: 15px
     border-radius: 10px
-    border-width: 1
+    border-width: 1px
     border-color: black
 `
 

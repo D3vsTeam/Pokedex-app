@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FlatList, ScrollView, View } from "react-native";
 import { Head, CustomCard } from '../../components'
 
@@ -8,7 +9,6 @@ const fake_data = [
     name: 'ola'
     }
 ]
-
 
 export const Home = () => {
     const renderItem = ({ item }) => (

@@ -20,7 +20,7 @@ export const Home = () => {
              <FlatList
                 data={fake_data}
                 renderItem={({item}) => <CustomCard item={item} />}
-                keyExtractor={(pokemon: Pokemon, i) => pokemon.name}
+                keyExtractor={(pokemon: Pokemon) => pokemon.name}
             />
 
             </ScrollView>

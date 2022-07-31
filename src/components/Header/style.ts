@@ -27,4 +27,5 @@ export const InputPokemon = styled.Text`
     border-radius: 5px;
 `;
 
-export const Icon = styled(MaterialCommunityIcons);
+export const Icon = styled(MaterialCommunityIcons)`
+`;

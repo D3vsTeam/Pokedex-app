@@ -1,8 +1,6 @@
 import React from "react";
 import { View,Text,TextInput } from "react-native";
-import  {PokemonText, Detalhe, InputPokemon} from './style';
-import { Icon } from './style';
-
+import  {PokemonText, Detalhe, InputPokemon, Icon} from './style';
 
 
 

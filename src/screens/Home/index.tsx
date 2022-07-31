@@ -33,9 +33,9 @@ export const Home = () => {
             <Head/>
             <ScrollView horizontal={false} style={{ padding: 20 }}>
              <FlatList
-                data={pokes}
-                renderItem={({item}) => <Text>TESTE</Text>}
-                keyExtractor={(pokemon: Pokemon, i) => pokemon.name}
+                data={fake_data}
+                renderItem={({item}) => <CustomCard item={item} />}
+                keyExtractor={(pokemon: Pokemon) => pokemon.name}
             />
 
             </ScrollView>

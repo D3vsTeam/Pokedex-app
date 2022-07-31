@@ -1,44 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, ScrollView, View,Text } from "react-native";
-import { Head, CustomCard } from '../../components'
+import { FlatList, ScrollView, View } from "react-native";
+import { CustomCard, Head } from '../../components';
 
-import { getAllPokemons } from '../../services/PokemonService'
 import { Pokemon } from "../../model/Pokemon";
-import { useGetData } from "../../services/PokemonService";
-
-const fake_data = [
-    {
-    id: 1,
-    name: 'ola'
-    }
-]
+import { getAllPokemons } from '../../services/PokemonService';
 
 export const Home = () => {
-    const { getPokemons } = useGetData()
-    const [pokes, setPokemons] = useState([])
-    
-    const callGetData = async () => {
-        const pokeResponse = await getPokemons()
+  const [pokemons, setPokemons] = useState<Pokemon[]>([])
 
-        if (!pokeResponse.error) {
-            setPokemons(pokeResponse)
-        }
-    }
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await getAllPokemons();
+        setPokemons(
+          response.data.results
+        )
+      } catch (error: any) {
+        console.log(error.message)
+      }
+    })()
+  }, []) 
 
-    useEffect(() => {
-        callGetData()
-    }, [])
-    return(
-        <View style={{flex:1}}>
-            <Head/>
-            <ScrollView horizontal={false} style={{ padding: 20 }}>
-             <FlatList
-                data={fake_data}
-                renderItem={({item}) => <CustomCard item={item} />}
-                keyExtractor={(pokemon: Pokemon) => pokemon.name}
-            />
+  return (
+    <View style={{ flex: 1 }}>
+      <Head />
+      <ScrollView horizontal={false} style={{ padding: 20 }}>
+        <FlatList
+          data={pokemons}
+          renderItem={({ item }) => <CustomCard item={item} />}
+          keyExtractor={(pokemon: Pokemon) => pokemon.name}
+        />
 
-            </ScrollView>
-        </View>
-    )
+      </ScrollView>
+    </View>
+  )
 }

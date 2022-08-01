@@ -3,20 +3,20 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 export const PokemonText = styled.Text`
-    width: 85px;
-    height: 40px;
-    font-size: 16px;
+    width: 160px;
+    height: 45px;
+    font-size: 30px;
     font-weight: 500;
 `;
 export const Detalhe = styled.Text`
-    width: 55%;
+    width: 60%;
     height: 50px;
-    font-size: 10px;
-    text-align: center;
+    font-size: 15px;
 `;
 
 export const Icon = styled(MaterialCommunityIcons)`
     margin-top: 50px;
+    margin-left: 85%;
 `;
 
 export const Container = styled.View`

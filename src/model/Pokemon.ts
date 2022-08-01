@@ -1,3 +1,5 @@
+import { pokemonsColors } from "../theme";
+
 export interface Pokemon {
   id?: number,
   name: string;
@@ -30,9 +32,11 @@ export interface Types {
 }
 
 export interface Type {
-  name: string
+  name: TypeNames
   url: string
 }
+
+export type TypeNames = keyof typeof pokemonsColors
 
 export interface Form {
   name: string

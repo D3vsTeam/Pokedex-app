@@ -1,9 +1,7 @@
 import styled from "styled-components/native";
-import {pokemonsColors} from "../../theme/index"
+import { TypeNames } from "../../model/Pokemon";
 
-type colors = keyof typeof pokemonsColors;
-
-export const CustomFrame = styled.TouchableOpacity<{type: colors}>`
+export const CustomFrame = styled.TouchableOpacity<{type: TypeNames}>`
     padding: 20px;
     margin-top: 15px;
     border-radius: 10px;

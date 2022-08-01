@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TextInput } from "react-native";
-import SearchInput from "../SearchInput";
+import {SearchInput} from "../../components";
 import { PokemonText, Detalhe, Icon, Container } from './style';
 
 export const Header = () => {

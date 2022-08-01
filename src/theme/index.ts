@@ -19,9 +19,14 @@ export const pokemonsColors = {
   water: "#4A90DA",
 }
 
+export const backgroundColors = {
+  grass: '#8BD674'
+}
+
 export default {
   colors: {
     ...pokemonsColors,
+    ...backgroundColors,
 
     background: "#DEDEDE",
 

@@ -31,7 +31,7 @@ export const CustomCard: React.FC<CustomCardType> = ({ item }) => {
               <CustomId>{pokemon.id}</CustomId>
               <CustomName>{pokemon.name}</CustomName>
             </View>
-            <Image style={{backgroundColor: 'transparent',height: 100,width:120}} source={{uri: pokemon.sprites.back_default}}/>
+            <Image style={{backgroundColor: 'transparent',height: 100,width:150}} source={{uri: pokemon.sprites.front_default}}/>
           </View>
           <View style={{flexDirection: 'row'}}>
             <FlatList

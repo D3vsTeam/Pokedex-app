@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Input, Search } from './styles';
 
-const SearchInput: React.FC = () => {
+export const SearchInput: React.FC = () => {
   return (
     <Container>
       <Search name="search" />
@@ -10,5 +10,3 @@ const SearchInput: React.FC = () => {
     </Container>
   );
 }
-
-export default SearchInput;

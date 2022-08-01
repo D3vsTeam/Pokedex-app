@@ -7,7 +7,7 @@ import  {PokemonText, Detalhe, InputPokemon, Icon, Search} from './style';
 
 export const Head = () => {
     return (
-        <View>
+        <View style={{padding:20}}>
             <Icon name="text-long" size={24} color="black" />
             <PokemonText>Pokedex</PokemonText>
             <Detalhe>Procure pelo seu pokemon pelo nome ou ID</Detalhe>

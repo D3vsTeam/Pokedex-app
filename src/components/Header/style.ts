@@ -24,9 +24,9 @@ export const Icon = styled(MaterialCommunityIcons)`
 `;
 
 export const Search = styled(FontAwesome)`
-height: 50px
-width: 300px
-border-width: 1px
-border-color: black
-border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
 `;

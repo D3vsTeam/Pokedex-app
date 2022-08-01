@@ -12,7 +12,7 @@ export const Head = () => {
             <PokemonText>Pokedex</PokemonText>
             <Detalhe>Procure pelo seu pokemon pelo nome ou ID</Detalhe>
             <View style = {{flexDirection: "row"}}>
-                <Search name="search" size={24} color="black"/>
+                <Search name="search" size={50} color="black"/>
                 <InputPokemon/>
             </View>
 

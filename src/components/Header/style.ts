@@ -1,11 +1,12 @@
 import styled from "styled-components/native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 
 export const PokemonText = styled.Text`
     width: 85;
-    height: 50;
-    margin-top: 100px;
+    height: 40;
+    margin-top: 20px;
     margin-left: 70px;
     font-size: 16px;
     font-weight: 500;
@@ -28,4 +29,10 @@ export const InputPokemon = styled.Text`
 `;
 
 export const Icon = styled(MaterialCommunityIcons)`
+    margin-top: 50;
+    padding-left: 300px;
+`;
+
+export const Search = styled(FontAwesome)`
+
 `;

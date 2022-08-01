@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 
 export const CustomFrame = styled.TouchableOpacity`
-    padding: 20px
+    padding: 21px
     margin-top: 15px
     border-radius: 10px
     border-width: 1px

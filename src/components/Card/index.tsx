@@ -25,7 +25,7 @@ export const CustomCard: React.FC<CustomCardType> = ({ item }) => {
   return (
     <>
       {pokemon &&
-        <CustomFrame>
+        <CustomFrame type={pokemon.types[0].type.name}>
           <CustomId>{pokemon.id}</CustomId>
           <CustomName>{pokemon.name}</CustomName>
         </CustomFrame>

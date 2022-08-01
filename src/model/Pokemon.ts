@@ -15,15 +15,21 @@ export interface Pokemon {
   species: Species
   sprites: Sprites
   weight: number
+  types: Types[]
 }
 
 export interface Ability {
-  ability: Ability2
+  ability: Ability
   is_hidden: boolean
   slot: number
+  url: string
+}
+export interface Types {
+  slot: number
+  type: Type
 }
 
-export interface Ability2 {
+export interface Type {
   name: string
   url: string
 }

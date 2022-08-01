@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FlatList, ScrollView, View } from "react-native";
-import { CustomCard, Head } from '../../components';
+import { CustomCard, Header } from '../../components';
 
 import { Pokemon } from "../../model/Pokemon";
 import { getAllPokemons } from '../../services/PokemonService';
@@ -23,7 +23,7 @@ export const Home = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      <Head />
+      <Header />
       <ScrollView horizontal={false} style={{ padding: 20 }}>
         <FlatList
           data={pokemons}

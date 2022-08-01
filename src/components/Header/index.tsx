@@ -1,23 +1,15 @@
 import React from "react";
-import { View,Text,TextInput } from "react-native";
-import  {PokemonText, Detalhe, InputPokemon, Icon, Search} from './style';
+import { View, Text, TextInput } from "react-native";
+import SearchInput from "../SearchInput";
+import { PokemonText, Detalhe, Icon, Container } from './style';
 
-
-
-
-export const Head = () => {
-    return (
-        <View style={{padding:20}}>
-            <Icon name="text-long" size={24} color="black" />
-            <PokemonText>Pokedex</PokemonText>
-            <Detalhe>Procure pelo seu pokemon pelo nome ou ID</Detalhe>
-            <View style = {{flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
-                <Search name="search" size={25} color="black"/>
-                <InputPokemon/>
-            </View>
-
-        </View>
-        
-
-    )
+export const Header = () => {
+  return (
+    <Container>
+      <Icon name="text-long" size={24} color="black" />
+      <PokemonText>Pokedex</PokemonText>
+      <Detalhe>Procure pelo seu pokemon pelo nome ou ID</Detalhe>
+      <SearchInput />
+    </Container>
+  )
 }

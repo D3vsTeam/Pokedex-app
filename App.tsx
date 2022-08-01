@@ -1,10 +1,12 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ThemeProvider } from 'styled-components/native';
 import { Home } from './src/screens';
+import theme from './src/theme';
 
 export default function App() {
   return (
-    <Home/>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }

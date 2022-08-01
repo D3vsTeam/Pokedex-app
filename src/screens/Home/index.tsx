@@ -30,7 +30,6 @@ export const Home = () => {
           renderItem={({ item }) => <CustomCard item={item} />}
           keyExtractor={(pokemon: Pokemon) => pokemon.name}
         />
-
       </ScrollView>
     </View>
   )

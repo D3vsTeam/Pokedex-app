@@ -6,7 +6,8 @@ import { Pokemon } from "../../model/Pokemon";
 import { getAllPokemons } from '../../services/PokemonService';
 
 export const Home = () => {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([])
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     (async () => {
@@ -21,12 +22,16 @@ export const Home = () => {
     })()
   }, []) 
 
+  const filteredPokemons = pokemons 
+    ? pokemons.filter(pokemon => pokemon.name.includes(search))
+    : []
+
   return (
     <View style={{ flex: 1 }}>
-      <Header />
+      <Header handleSearch={(input) => setSearch(input)} />
       <ScrollView horizontal={false} style={{ padding: 20 }}>
         <FlatList
-          data={pokemons}
+          data={filteredPokemons}
           renderItem={({ item }) => <CustomCard item={item} />}
           keyExtractor={(pokemon: Pokemon) => pokemon.name}
         />

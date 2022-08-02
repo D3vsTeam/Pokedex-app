@@ -10,8 +10,8 @@ type CustomCardType = ViewProps & {
 
 export const CardType: React.FC<CustomCardType> = ({item,pokemonT}) => {
     return(
-        <CustomCardType type={pokemonT.types[0].type.name}>
-            <Text>{item}</Text>
+        <CustomCardType type={(pokemonT.types[0].type.name).concat("bkg")}>
+            <Text>{item.charAt(0).toUpperCase() + item.slice(1)}</Text>
         </CustomCardType>
     )
 }

@@ -20,7 +20,24 @@ export const pokemonsColors = {
 }
 
 export const backgroundColors = {
-  grass: '#8BD674'
+  grassbkg: '#8BD674',
+  bkgdark: '#8BD674',
+  bkgbug: '#8CB230',
+  bkgdragon: '#7383B9',
+  bkgelectric: '#F2CB55',
+  bkgfairy: '#EBA8C3',
+  bkgfighting: "#EB4971",
+  bkgfire:"#FFA756",
+  bkgflying: "#83A2E3",
+  bkgghost: "#8571BE",
+  bkgground: "#F78551",
+  bkgice: "#91D8DF",
+  bkgnormal: "#B5B9C4",
+  bkgpoison: "#9F6E97",
+  bkgpsychic: "#FF6568",
+  bkgrock: "#D4C294",
+  bkgsteel: "#4C91B2",
+  waterbkg: "#58ABF6",
 }
 
 export default {

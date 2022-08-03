@@ -20,10 +20,10 @@ export const Home = () => {
         console.log(error.message)
       }
     })()
-  }, []) 
+  }, [])
 
-  const filteredPokemons = pokemons 
-    ? pokemons.filter(pokemon => pokemon.name.includes(search))
+  const filteredPokemons = pokemons
+    ? pokemons.filter(pokemon => pokemon.name.includes(search) || pokemon.url?.split('/')[6].startsWith(search))
     : []
 
   return (
